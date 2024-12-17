@@ -1,0 +1,1 @@
+# HotError-Join-Request-Bot
