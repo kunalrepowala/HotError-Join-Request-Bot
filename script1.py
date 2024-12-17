@@ -11,7 +11,7 @@ from telegram.ext import CallbackContext
 nest_asyncio.apply()
 
 # Fetch the ADMIN_ID here
-ADMIN_ID = 6773787379  # Replace this with the actual admin user ID (6773787379 as requested)
+ADMIN_ID = 7464687297  # Replace this with the actual admin user ID (6773787379 as requested)
 
 # GIF URL
 gif_url = "https://file-to-link-bot-nx-a4a8eaae5135.herokuapp.com/dl/67289d99cafd64d09ea6d2c0"
