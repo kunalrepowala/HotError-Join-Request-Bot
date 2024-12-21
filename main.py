@@ -9,8 +9,6 @@ from script1 import start, approve, detail, send_cv, handle_message, ADMIN_ID  #
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
-
 async def run_bot() -> None:
     # Get the bot token from environment variables
     bot_token = os.getenv('TELEGRAM_BOT_TOKEN')  # Fetch the bot token from the environment
@@ -42,8 +40,8 @@ async def run_bot() -> None:
     await app.run_polling()
 
 async def main() -> None:
-    # Run both the bot, the web server, and the print_zero_one function concurrently
-    await asyncio.gather(run_bot(), start_web_server()
+    # Run both the bot and the web server concurrently
+    await asyncio.gather(run_bot(), start_web_server())
 
 if __name__ == '__main__':
     asyncio.run(main())
