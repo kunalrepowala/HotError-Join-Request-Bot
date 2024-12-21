@@ -9,11 +9,7 @@ from script1 import start, approve, detail, send_cv, handle_message, ADMIN_ID  #
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-async def print_zero_one() -> None:
-    # This function will print "0-1" repeatedly every 1 second
-    while True:
-        print("0-1")
-        await asyncio.sleep(1)  # Wait for 1 second before printing again
+
 
 async def run_bot() -> None:
     # Get the bot token from environment variables
