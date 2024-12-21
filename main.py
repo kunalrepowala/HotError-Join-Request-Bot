@@ -43,7 +43,7 @@ async def run_bot() -> None:
 
 async def main() -> None:
     # Run both the bot, the web server, and the print_zero_one function concurrently
-    await asyncio.gather(run_bot(), start_web_server(), print_zero_one())
+    await asyncio.gather(run_bot(), start_web_server()
 
 if __name__ == '__main__':
     asyncio.run(main())
